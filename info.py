@@ -15,15 +15,16 @@ def is_enabled(value, default):
         return default
 
 
+
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '20389440'))
-API_HASH = environ.get('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+SESSION = os.getenv('SESSION', 'Media_search')
+API_ID = int(os.getenv('API_ID', '20389440'))
+API_HASH = os.getenv('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457')
+BOT_TOKEN = os.getenv('BOT_TOKEN', "")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-USE_CAPTION_FILTER = is_enabled(environ.get('USE_CAPTION_FILTER', 'True'))
+CACHE_TIME = int(os.getenv('CACHE_TIME', 1800))
+USE_CAPTION_FILTER = is_enabled(os.getenv('USE_CAPTION_FILTER', 'True'))
 
 PICS = environ.get('PICS', '').split()
 NOR_IMG = environ.get("NOR_IMG", "")
