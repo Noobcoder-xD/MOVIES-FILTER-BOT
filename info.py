@@ -1,6 +1,5 @@
 #Creadits Ivvakapothe Nee Kutha Paguludhi Owner
 import re
-import os
 from os import environ, getenv
 from Script import script
 
