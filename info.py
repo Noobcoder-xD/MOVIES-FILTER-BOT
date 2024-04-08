@@ -94,7 +94,7 @@ ON_HEROKU = 'DYNO' in environ
 APP_NAME = environ.get('APP_NAME')
 HAS_SSL = bool(getenv('HAS_SSL', False))
 if HAS_SSL:
-    URL = f"https://{APP_NAME}.herokuapp.com/"
+    URL = f"https://testzno-f6087b8c0b5b.herokuapp.com/"
 else:
-    URL = f"http://{APP_NAME
+    URL = f"https://testzno-f6087b8c0b5b.herokuapp.com/"
                     
